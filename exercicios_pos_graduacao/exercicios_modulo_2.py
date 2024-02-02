@@ -17,17 +17,20 @@
 
 #forma menos simples
 
-tam_lista = input("insira a quantidade de números que quer ordenar: ")
+tam_lista = 3
+#int(input("insira a quantidade de números que quer ordenar: "))
 
 lista_num = []
 
-for i in range(tam_lista):
-    num = int(input(f"Digite o valor {i + 1}: "))
+for posicao in range(tam_lista):
+    num = int(input(f"Digite o valor {posicao + 1}: "))
     lista_num.append(num)
     
 for posicao in range(tam_lista - 1):
     for posicao_prox in range(posicao + 1, tam_lista):
-        if num[posicao] > num[posicao_prox]:
-            num[posicao], num[posicao_prox] = num[posicao_prox], num[posicao]
+        if lista_num[posicao] > lista_num[posicao_prox]:
+            lista_num[posicao], lista_num[posicao_prox] = lista_num[posicao_prox], lista_num[posicao]
             
 print("Os numeros ordenados são: ", lista_num)
+
+#------------------- 
