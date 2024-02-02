@@ -101,3 +101,5 @@
 
 
 # print(f"O tempo aproximado de download do arquivo é de {tempo_download_minutos} minutos.")
+x = 2
+print(x)
